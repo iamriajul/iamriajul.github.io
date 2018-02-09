@@ -619,7 +619,7 @@
 		</div>
 		<div class="choose animate-box">
 			<h2>Contact</h2>
-			<form action="https://formspree.io/kmriajulislami@gmail.com" method="POST">
+			<form id="contact-form" action="https://formspree.io/kmriajulislami@gmail.com" method="POST">
 				<div class="row form-group">
 					<div class="col-md-6">
 						<input type="text" name="First_Name" id="fname" class="form-control" placeholder="Your firstname">
@@ -651,8 +651,16 @@
 				<div class="form-group">
 					<input type="submit" value="Send Message" class="btn btn-primary">
 				</div>
-
-			</form>	
+				<!--Bypass reCaptcha because we can't use while using ajax-->
+				<input type="text" name="_gotcha" style="display:none" />
+				<!--Common message we are gonna show to the user.-->
+				<div class="alert alert-success" id="success" style="display: none">
+					<strong>Success!</strong> Your message has been sent successfully.
+				</div>
+				<div class="alert alert-danger" id="error" style="display: none">
+					<strong>Error!</strong> Something went wrong internally, please try again later!
+				</div>
+			</form>
 		</div>
 	</div>
 

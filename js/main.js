@@ -145,5 +145,41 @@
 		skillsWayPoint();
 	});
 
+	// Contact-Form at bottom of the page
+    jQuery(document).ready(function ($) {
+    	var contactForm = $('#contact-form');
+
+        contactForm.on('submit', function (e) {
+            var success = $('#contact-form #success');
+            var error   = $('#contact-form #error');
+
+            success.css('display', 'none');
+            error.css('display', 'none');
+
+            $.post('https://formspree.io/kmriajulislami@gmail.com',
+				contactForm.serialize(),
+				function (data) {
+                console.log(data);
+                // Show message when site need to verified in order use Formspree functionality.
+                if (data.success == 'confirmation email sent'){
+                    success.css('display', 'none');
+                    error.html('<strong>Error!</strong> This site is not verified to use this Form.');
+                    error.css('display', 'block');
+                    return;
+				}
+				// Otherwise show success message
+                success.css('display', 'block');
+                error.css('display', 'none');
+            }, 'json')
+			// Show error when something wrong internally.
+                .fail(function () {
+                    success.css('display', 'none');
+                    error.css('display', 'block');
+                });
+
+            e.preventDefault();
+            return false;
+        });
+    });
 
 }());
