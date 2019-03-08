@@ -168,7 +168,7 @@
 					if(response.status == "success"){
 						alert("We received your submission, thank you!");
 						sending.css('display', 'none');
-						console.log(data);
+						console.log(response);
 						// Show message when site need to verified in order use Formspree functionality.
 						if (data.success == 'confirmation email sent'){
 							success.css('display', 'none');
