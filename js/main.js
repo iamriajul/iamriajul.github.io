@@ -146,45 +146,48 @@
 	});
 
 	// Contact-Form at bottom of the page
-    jQuery(document).ready(function ($) {
-    	var contactForm = $('#contact-form');
+	$(function(){
+		$("#contact-form").submit(function(e){
+			e.preventDefault();
+			var href = $(this).attr("action");
 
-        // contactForm.on('submit', function (e) {
-        //     var success = $('#contact-form #success');
-        //     var error   = $('#contact-form #error');
-        //     var sending = $('#contact-form #img-sending');
-		//
-        //     success.css('display', 'none');
-        //     error.css('display', 'none');
-        //     sending.css('display', 'block');
-		//
-        //     $.post('https://formspree.io/kmriajulislami@gmail.com',
-		// 		contactForm.serialize(),
-		// 		function (data) {
-        //             sending.css('display', 'none');
-		// 			console.log(data);
-		// 			// Show message when site need to verified in order use Formspree functionality.
-		// 			if (data.success == 'confirmation email sent'){
-		// 				success.css('display', 'none');
-		// 				error.html('<strong>Error!</strong> This site is not verified to use this Form.');
-		// 				error.css('display', 'block');
-		// 				return;
-		// 			}
-		// 			// Otherwise show success message
-		// 			success.css('display', 'block');
-		// 			error.css('display', 'none');
-        //     	},
-		// 		'json')
-		// 	// Show error when something wrong internally.
-        //         .fail(function () {
-        //             sending.css('display', 'none');
-        //             success.css('display', 'none');
-        //             error.css('display', 'block');
-        //         });
-		//
-        //     e.preventDefault();
-        //     return false;
-        // });
-    });
+			var success = $('#contact-form #success');
+			var error   = $('#contact-form #error');
+			var sending = $('#contact-form #img-sending');
+
+			success.css('display', 'none');
+			error.css('display', 'none');
+			sending.css('display', 'block');
+
+			$.ajax({
+				type: "POST",
+				dataType: "json",
+				url: href,
+				data: $(this).serialize(),
+				success: function(response){
+					if(response.status == "success"){
+						alert("We received your submission, thank you!");
+						sending.css('display', 'none');
+						console.log(data);
+						// Show message when site need to verified in order use Formspree functionality.
+						if (data.success == 'confirmation email sent'){
+							success.css('display', 'none');
+							error.html('<strong>Error!</strong> This site is not verified to use this Form.');
+							error.css('display', 'block');
+							return;
+						}
+						// Otherwise show success message
+						success.css('display', 'block');
+						error.css('display', 'none');
+					}else{
+						alert("An error occured: " + response.message);
+						sending.css('display', 'none');
+						success.css('display', 'none');
+						error.css('display', 'block');
+					}
+				}
+			});
+		});
+	});
 
 }());
