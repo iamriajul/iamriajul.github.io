@@ -169,13 +169,6 @@
 						alert("We received your submission, thank you!");
 						sending.css('display', 'none');
 						console.log(response);
-						// Show message when site need to verified in order use Formspree functionality.
-						if (data.success == 'confirmation email sent'){
-							success.css('display', 'none');
-							error.html('<strong>Error!</strong> This site is not verified to use this Form.');
-							error.css('display', 'block');
-							return;
-						}
 						// Otherwise show success message
 						success.css('display', 'block');
 						error.css('display', 'none');
