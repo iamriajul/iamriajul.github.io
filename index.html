@@ -1,766 +1,103 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-	<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Hello! I'm Riajul Islam - Professional Applications Developer</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Hello Dear! I'm Riajul Islam & I'm a full-stack Web & Software Developer." />
-	<meta name="keywords" content="riajul islam, riajul, 01782320460, full-stack, application developer, software developer, programmer, web developer, web designer, wp expert, wordpress, wp theme developer, plugin developer, php developer, android developer, desktop developer, java developer, python developer, angular developer, progressive web application developer, electron developer" />
-	<meta name="author" content="https://iamriajul.github.io/" />
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>I'm Riajul Islam - a self-taught SE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="riajul islam, riajul, 01782320460, full-stack, application developer, software developer, programmer, web developer, web designer, wp expert, wordpress, wp theme developer, plugin developer, php developer, android developer, desktop developer, java developer, python developer, angular developer, progressive web application developer, electron developer" />
+    <meta name="author" content="https://riajul.dev/" />
 
-  	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content="Hello! I'm Riajul Islam - Professional Applications Developer"/>
-	<meta property="og:image" content="https://iamriajul.github.io/images/riajul-squre-2018.jpg"/>
-	<meta property="og:url" content="https://iamriajul.github.io/"/>
-	<meta property="og:site_name" content="Hello! I'm Riajul Islam - Professional Applications Developer"/>
-	<meta property="og:type" content="profile"/>
-	<meta property="og:description" content="Hello there! I'm Riajul Islam & I'm a full-stack Web & Software Developer."/>
-	<meta name="twitter:title" content="Hello! I'm Riajul Islam - Professional Applications Developer" />
-	<meta name="twitter:image" content="https://iamriajul.github.io/images/riajul-squre-2018.jpg" />
-	<meta name="twitter:url" content="https://iamriajul.github.io/" />
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="v1/css/icomoon.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="v1/css/bootstrap.css">
 
-	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="v1/css/style.css">
 
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
 
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
+        .bgimg {
+            background-image: url('forestbridge.jpg');
+            height: 100%;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            color: white;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 25px;
+        }
 
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
+        .topleft {
+            position: absolute;
+            top: 0;
+            left: 16px;
+        }
 
-    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="images/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+        .bottomleft {
+            position: absolute;
+            bottom: 0;
+            left: 16px;
+        }
 
-    </head>
-	<body>
+        .middle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
 
-	<div class="fh5co-loader"></div>
+        hr {
+            margin: auto;
+            width: 40%;
+        }
+    </style>
+</head>
+<body>
 
-	<div id="page">
-	<header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner" style="background-image:url(images/cover_bg_3.jpg);" data-stellar-background-ratio="0.5">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center">
-					<div class="display-t js-fullheight">
-						<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
-							<div class="profile-thumb" style="background: url(images/riajul-square-2020.jpg);"></div>
-							<h1><span>Riajul Islam</span></h1>
-							<h3><span>Web, Desktop, Mobile Applications Developer</span></h3>
-							<p>
-								<ul class="fh5co-social-icons">
-									<li><a href="https://fb.com/iamriajul" target="_blank"><i class="icon-facebook2"></i></a></li>
-									<li><a href="https://twitter.com/iamriajul" target="_blank"><i class="icon-twitter2"></i></a></li>
-									<li><a href="https://www.linkedin.com/in/iamriajul" target="_blank"><i class="icon-linkedin2"></i></a></li>
-									<li><a href="https://github.com/iamriajul" target="_blank"><i class="icon-github2"></i></a></li>
-								</ul>
-                                <a href="http://play.google.com/store/apps/dev?id=7770433443794211141" target="_blank"><img src="images/google-play.png" alt="Google PlayStore page"></a>
-                                <a href="https://play.google.com/store/apps/details?id=com.alquranbd.alquranbd" target="_blank"><img src="images/bangla-quran.png" alt="Bangla Quran App on PlayStore"></a>
-								<a href="https://stackoverflow.com/users/7033983/riajul">
-									<img src="https://stackoverflow.com/users/flair/7033983.png" width="208" height="58" alt="profile for Riajul at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Riajul at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
-								</a>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
+<div class="bgimg">
+    <div class="topleft">
+        <p>Riajul Islam</p>
+    </div>
+    <div class="middle">
+        <h1 style="color: white;">COMING SOON</h1>
+        <hr>
+        <p>
+            Version 2 of my personal website is coming soon! <br>
+            I plan to add automated synchronization feature with my GitHub and LinkedIn profile. <br>
+            Stay tuned!
+        </p>
+        <hr>
+        <p>
+            You may also want to check out my LinkedIn Profile: <a href="https://linkedin.com/in/iamriajul" target="_blank">LinkedIn <i class="icon-linkedin2"></i></a>
+        </p>
+        <hr>
+        <p>
+        <ul class="fh5co-social-icons">
+            <li><a href="https://fb.com/iamriajul" target="_blank"><i class="icon-facebook2"></i></a></li>
+            <li><a href="https://twitter.com/iamriajul" target="_blank"><i class="icon-twitter2"></i></a></li>
+            <li><a href="https://linkedin.com/in/iamriajul" target="_blank"><i class="icon-linkedin2"></i></a></li>
+            <li><a href="https://github.com/iamriajul" target="_blank"><i class="icon-github2"></i></a></li>
+        </ul>
+        <a href="http://play.google.com/store/apps/dev?id=7770433443794211141" target="_blank"><img src="v1/images/google-play.png" alt="Google PlayStore page"></a>
+        <a href="https://play.google.com/store/apps/details?id=com.alquranbd.alquranbd" target="_blank"><img src="v1/images/bangla-quran.png" alt="Bangla Quran App on PlayStore"></a>
+        <a href="https://stackoverflow.com/users/7033983/riajul">
+            <img src="https://stackoverflow.com/users/flair/7033983.png" width="208" height="58" alt="profile for Riajul at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for Riajul at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
+        </a>
+        </p>
+    </div>
+    <div class="bottomleft" style="text-align: center;">
+        <p>
+            Looking for old website? <a href="v1">Click here</a>
+        </p>
+    </div>
+</div>
 
-	<div id="fh5co-about" class="animate-box">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>About Me</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<ul class="info">
-						<li><span class="first-block">Full Name:</span><span class="second-block">Riajul Islam</span></li>
-						<li><span class="first-block">Phone:</span><span class="second-block">+880 1782 320 460</span></li>
-						<li><span class="first-block">Email:</span><span class="second-block">kmriajulislami@gmail.com</span></li>
-						<li><span class="first-block">Website:</span><span class="second-block">riajul.dev</span></li>
-						<li><span class="first-block">Address:</span><span class="second-block">33 Rail Bazar Road, Jagati, Kushtia, Dhaka, Bangladesh - 7002</span></li>
-						<li><span class="first-block">Languages:</span><span class="second-block">Bengali, Arabic, English, Hindi and Urdu</span></li>
-						<li><span class="first-block">Programming Languages:</span><span class="second-block">PHP, Java, Kotlin, Javascript, Dart, Python, HTML, CSS and I can adopt any new one easily.</span></li>
-					</ul>
-				</div>
-				<div class="col-md-8">
-					<h2>Hello Dear!</h2>
-					<p>
-						I have been a very successful web & mobile developer for over 5 years, working for individuals and companies in Bangladesh mostly.
-						<br>
-						There was struggle when I started, but that didn't last very long, Alhamdulillah.
-						<br>
-						I have learned a lot from workplaces, I have never stopped learning.
-					</p>
-					<p>
-						Since I have started Web and Android app development, I have been spending every spare minute writing code for the Web & Mobile, and learning everything on mobile application development. I have also adapted cross-platform Mobile Application Development with Flutter and also Successfully Completed a Government Application Development for iOS and Android using Flutter, Laravel and Amazon Web Services. I have a primary Job in an IT Farm where I develop a wide range of Applications day-to-day basis like POS, Employee Tracking System, Flight Management System, Radar Flight Scanning, Applications for Biman Bangladesh Airlines's Users and System Administration mostly develop Applications for Biman Bangladesh Airlines and Hazrat Shahjalal International Airport.  Additionally to development of new apps, a lot of the work I do is on-going maintenance of existing popular apps.
-					</p>
-					<p>
-						I always aim to maintain a long term relationship with my clients.
-					</p>
-					<p>
-						Let's talk about my personal life a little,<br>
-						My hobbies are learning new technologies and fishing!.<br>
-						I love learning new spoken-languages.<br>
-						I believe more in knowledge and experiences than certificates.<br>
-						I hate lies very very much.<br>
-						I love to have logical discussions.<br>
-						My family is My Mother, Father and Me <i class="icon-happy2"></i><br>
-						Thanks for reading!
-					</p>
-					<p>
-						You're welcomed if you wanna have a logical discussions with me.
-					</p>
-					<p>
-						<ul class="fh5co-social-icons">
-							<li><a href="https://fb.com/iamriajul" target="_blank"><i class="icon-facebook3"></i></a></li>
-							<li><a href="https://twitter.com/iamriajul" target="_blank"><i class="icon-twitter2"></i></a></li>
-							<li><a href="https://www.linkedin.com/in/iamriajul" target="_blank"><i class="icon-linkedin2"></i></a></li>
-							<li><a href="https://github.com/iamriajul" target="_blank"><i class="icon-github2"></i></a></li>
-						</ul>
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div id="fh5co-resume" class="fh5co-bg-color">
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>My Resume</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12 col-md-offset-0">
-					<ul class="timeline">
-						<li class="timeline-heading text-center animate-box">
-							<p>
-								<strong>
-									*** A bit outdated, TODO: need to add new experiences got from 2018 to now. Updated:
-								<a href="https://docs.google.com/document/d/1RAX-tVRd1SCkQC31KZvEbm8HsFZLn0jps0eBVLSG_6Q" target="_blank">Google Docs</a>
-								</strong>
-							</p>
-							<div><h3>Work Experience</h3></div>
-						</li>
-						<li class="animate-box timeline-unverted">
-							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Senior Developer</h3>
-									<span class="company">Freelancing - 2017 - Current</span>
-								</div>
-								<div class="timeline-body">
-									<p>Become a super learner!, Got an job as Company's Head Web Developer. did an Android Application projects as volunteer. started Publishing to Playstore. accomplished many in things in software development.</p>
-								</div>
-							</div>
-						</li>
-						<li class="timeline-inverted animate-box">
-							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Junior Developer</h3>
-									<span class="company">Freelancing - 2016/October</span>
-								</div>
-								<div class="timeline-body">
-									<p>Started learning Android Application Development. in 2016 finished many web projects and earned quite good money!.</p>
-								</div>
-							</div>
-						</li>
-						<li class="animate-box timeline-unverted">
-							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Got my first Web Project!</h3>
-									<span class="company">from Jessore District - 2016/February</span>
-								</div>
-								<div class="timeline-body">
-									<p>In this project i was ordered to build an E-Commerce website with Wordpress & WooCommerce, I did all things good except Design, design wasn't quite good.</p>
-								</div>
-							</div>
-						</li>
-
-						<br>
-						<li class="timeline-heading text-center animate-box">
-							<div><h3>Education</h3></div>
-						</li>
-						<li class="timeline-inverted animate-box">
-							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Willing to Accomplish High-School Graduation with Science</h3>
-									<span class="company">Kushtia Alia Madrasah - 2018 - 2019</span>
-								</div>
-								<div class="timeline-body">
-									<p>In sha Allah(إن شاء الله) i will accomplish my High-School Graduation with Science in 2019!</p>
-								</div>
-							</div>
-						</li>
-						<li class="animate-box timeline-unverted">
-							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Messed-up High-School Graduation!</h3>
-									<span class="company">Kushtia Alia Madrasah - 2016 - 2017</span>
-								</div>
-								<div class="timeline-body">
-									<p>Oh! i messed-up my graduation! but why? answer is I was drowned into Learning programming doing freelancing earning money etc...!</p>
-								</div>
-							</div>
-						</li>
-						<li class="timeline-inverted animate-box">
-							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">JDC Passed</h3>
-									<span class="company">Jugia Dakhil Madrasah - 2014 - 2015</span>
-								</div>
-								<div class="timeline-body">
-									<p>Passed the JDC Examination with the Result of GPA 3.95(A), 2015 is the year when i dived into programming world with HTML, CSS, Javascript and PHP</p>
-								</div>
-							</div>
-						</li>
-						<li class="animate-box timeline-unverted">
-							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
-							<div class="timeline-panel">
-								<div class="timeline-heading">
-									<h3 class="timeline-title">Hafez e Quran - حافظ القران</h3>
-									<span class="company">2013 <- 2010  - المدرسة الصمدية</span>
-								</div>
-								<div class="timeline-body">
-									<p> إِنَّا نَحْنُ نَزَّلْنَا الذِّكْرَ وَإِنَّا لَهُ لَحَافِظُونَ (Al-Quran Al-Hijr/9)<br> We have, without doubt, sent down the Message; and We will assuredly guard it (from corruption).</p>
-								</div>
-							</div>
-						</li>
-			    	</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-	<div id="fh5co-features" class="animate-box">
-		<div class="container">
-			<div class="services-padding">
-				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<h2>My Services</h2>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-4 text-center">
-						<div class="feature-left">
-							<span class="icon">
-								<i class="icon-paintbrush"></i>
-							</span>
-							<div class="feature-copy">
-								<h3>Web Design</h3>
-								<p>Designing a web is quite difficult if that's need to be unique, but i always try to do my best.</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-4 text-center">
-						<div class="feature-left">
-                            <span class="icon">
-								<i class="icon-fire"></i>
-							</span>
-							<div class="feature-copy">
-								<h3>Web Development</h3>
-								<p>Developing/Back-End Development is that where i'm very expert. i don't think how critical algorithm is, i'm always ready to go!</p>
-							</div>
-						</div>
-
-					</div>
-					<div class="col-md-4 text-center">
-						<div class="feature-left">
-							<span class="icon">
-								<i class="icon-database"></i>
-							</span>
-							<div class="feature-copy">
-								<h3>E-Commerce Development</h3>
-								<p>Nowadays E-Commerce getting so popular and i'm doing so well with it. i'm always ready to go with it!</p>
-							</div>
-						</div>
-					</div>
-				</div>
-
-
-				<div class="row">
-					<div class="col-md-4 text-center">
-
-						<div class="feature-left">
-							<span class="icon">
-								<i class="icon-android"></i>
-							</span>
-							<div class="feature-copy">
-								<h3>Android Application Development</h3>
-								<p>I do both Designing(XML) and Back-End Java/Kotlin, I follow Material design guided by Google. I always aware/concern about performance and app size. many of users cancel their app installation because the downloading time!</p>
-							</div>
-						</div>
-
-					</div>
-
-					<div class="col-md-4 text-center">
-						<div class="feature-left">
-							<span class="icon">
-								<i class="icon-desktop"></i>
-							</span>
-							<div class="feature-copy">
-								<h3>Desktop Application Development</h3>
-								<p>I did not have any Project with this, but if you want me to get started with this then, you can hire me. In this field i know quite good technologies that i can work with such as Java & JavaFX or C#, PyQt5 or with Electron Framework.</p>
-							</div>
-						</div>
-
-					</div>
-					<div class="col-md-4 text-center">
-						<div class="feature-left">
-							<span class="icon">
-								<i class="icon-chat"></i>
-							</span>
-							<div class="feature-copy">
-								<h3>Support</h3>
-								<p>Supporting clients is bonding with clients. I always try to support my clients as best i can.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div id="fh5co-skills" class="animate-box">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Skills</h2>
-				</div>
-			</div>
-			<div class="row row-pb-md">
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="98"><span><strong>HTML5, XML</strong>98%</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="90"><span><strong>CSS3</strong>90%</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="98"><span><strong>MySQL</strong>98%</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="99"><span><strong>PHP</strong>99%</span></div>
-				</div>
-
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="95"><span><strong>Node.js</strong>95%</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="80"><span><strong>Angular</strong>80%</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="90"><span><strong>Vue.js</strong>90%</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="95"><span><strong>Javascript</strong>95%</span></div>
-				</div>
-
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="40"><span><strong>Python</strong>40%</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="90"><span><strong>Java</strong>90%</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="95"><span><strong>Kotlin</strong>95%</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="40"><span><strong>C#</strong>40%</span></div>
-				</div>
-
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="97"><span><strong>Laravel</strong>97%</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="30"><span><strong>Django</strong>30%</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="50"><span><strong>Dart</strong>50%</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="75"><span><strong>Flutter</strong>75%</span></div>
-				</div>
-
-			</div>
-			<div class="row">
-				<div class="col-md-6">
-					<div class="progress-wrap">
-						<h3><span class="name-left">HTML5/XML/CSS3</span><span class="value-right">95%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-1 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width:95%">
-						  </div>
-						</div>
-					</div>
-					<div class="progress-wrap">
-						<h3><span class="name-left">WordPress/WooCommerce</span><span class="value-right">98%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-2 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" style="width:98%">
-						  </div>
-						</div>
-					</div>
-					<div class="progress-wrap">
-						<h3><span class="name-left">Laravel</span><span class="value-right">97%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-3 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="97" aria-valuemin="0" aria-valuemax="100" style="width:97%">
-						  </div>
-						</div>
-					</div>
-					<div class="progress-wrap">
-						<h3><span class="name-left">Web Application Development</span><span class="value-right">99%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-4 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="99" aria-valuemin="0" aria-valuemax="100" style="width:99%">
-						  </div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="progress-wrap">
-						<h3><span class="name-left">Flutter</span><span class="value-right">75%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-5 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%">
-						  </div>
-						</div>
-					</div>
-					<div class="progress-wrap">
-						<h3><span class="name-left">Angular</span><span class="value-right">80%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-striped active" role="progressbar"
-						  aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
-						  </div>
-						</div>
-					</div>
-					<div class="progress-wrap">
-						<h3><span class="name-left">JavaScript/Typescript</span><span class="value-right">85%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-1 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">
-						  </div>
-						</div>
-					</div>
-					<div class="progress-wrap">
-						<h3><span class="name-left">Mobile Application Development</span><span class="value-right">90%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-3 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
-						  </div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<hr/>
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Live Statistics</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12">
-					<figure><embed src="https://wakatime.com/share/@iamriajul/a9103021-dbea-4e95-82a7-061da73ac140.svg"></embed></figure>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div id="fh5co-work" class="fh5co-bg-dark">
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Work</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="https://play.google.com/store/apps/details?id=com.alquranbd.alquranbd" target="_blank" class="work" style="background-image: url(images/work/bangla_quran_promo.jpg);">
-						<div class="desc" style="background: #ffffffbd;">
-							<h3>Bangla Quran Android App</h3>
-							<span><img src="images/google-play.png" alt="Bangla Quran on PlayStore"></span>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="https://play.google.com/store/apps/details?id=io.github.iamriajul.urduqaidabangla" target="_blank" class="work" style="background-image: url(images/work/urdu_qaida_promo.jpg);">
-						<div class="desc" style="background: #ffffffbd;">
-							<h3>উর্দু কায়দা Android App</h3>
-							<span><img src="images/google-play.png" alt="উর্দু কায়দা on PlayStore"></span>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="https://play.google.com/store/apps/details?id=io.github.iamriajul.urdukipehlikitab" target="_blank" class="work" style="background-image: url(images/work/urdu_ki_pehli_kitab_promo.jpg);">
-						<div class="desc" style="background: #ffffffbd;">
-							<h3>উর্দু কি পহেলী কিতাব Android App</h3>
-							<span><img src="images/google-play.png" alt="উর্দু কি পহেলী কিতাব on PlayStore"></span>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="https://play.google.com/store/apps/details?id=org.dailyislam.android.preview" target="_blank" class="work" style="background-image: url(images/work/dailyislam-logo.png);">
-						<div class="desc" style="background: #ffffffbd;">
-							<h3>Daily Islam Android App<br><small>Applications Developer at dailyislam.org</small></h3>
-							<span><img src="images/google-play.png" alt="Daily Islam on PlayStore"></span>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="https://play.google.com/store/apps/details?id=io.github.iamriajul.thousandsunnahbengali" target="_blank" class="work" style="background-image: url(images/work/thousandsunnahbengali_promo.jpg);">
-						<div class="desc" style="background: #ffffffbd;">
-							<h3>১০০০ সুন্নাত Android App</h3>
-							<span><img src="images/google-play.png" alt="১০০০ সুন্নাত on PlayStore"></span>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-3 text-center col-padding animate-box">
-					<a href="https://play.google.com/store/apps/details?id=io.github.iamriajul.thousandsunnahenglish" target="_blank" class="work" style="background-image: url(images/work/thousandsunnahenglish_promo.png);">
-						<div class="desc" style="background: #ffffffbd;">
-							<h3>1000 Sunnah Android App</h3>
-							<span><img src="images/google-play.png" alt="1000 Sunnah on PlayStore"></span>
-						</div>
-					</a>
-				</div>
-                <div class="col-md-3 text-center col-padding animate-box">
-                    <a href="https://hasbd.com" target="_blank" class="work" style="background-image: url(images/work/hasbd_promo.jpg);">
-                        <div class="desc" style="background: #ffffffbd;">
-                            <h3>Web Developer at HASBD</h3>
-                            <span><img src="images/work/hasbd_logo.png" alt="HASBD"></span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-3 text-center col-padding animate-box">
-                    <a href="https://play.google.com/store/apps/details?id=com.apsbiman.bimanhajjflights" target="_blank" class="work" style="background-image: url(images/work/biman_promo.jpg);">
-                        <div class="desc" style="background: #ffffffbd;">
-                            <h3>Biman Hajj Flight Android App<br><small>Lead Developer at Excellent Soft</small></h3>
-							<span><img src="images/google-play.png" alt="Biman Hajj Flight on PlayStore"></span>
-                        </div>
-                    </a>
-                </div>
-				<!--<div class="col-md-3 text-center col-padding animate-box">-->
-					<!--<a href="#" class="work" style="background-image: url(images/portfolio-6.jpg);">-->
-						<!--<div class="desc">-->
-							<!--<h3>Project Name</h3>-->
-							<!--<span>Illustration</span>-->
-						<!--</div>-->
-					<!--</a>-->
-				<!--</div>-->
-				<!--<div class="col-md-3 text-center col-padding animate-box">-->
-					<!--<a href="#" class="work" style="background-image: url(images/portfolio-7.jpg);">-->
-						<!--<div class="desc">-->
-							<!--<h3>Project Name</h3>-->
-							<!--<span>Brading</span>-->
-						<!--</div>-->
-					<!--</a>-->
-				<!--</div>-->
-				<!--<div class="col-md-3 text-center col-padding animate-box">-->
-					<!--<a href="#" class="work" style="background-image: url(images/portfolio-8.jpg);">-->
-						<!--<div class="desc">-->
-							<!--<h3>Project Name</h3>-->
-							<!--<span>Illustration</span>-->
-						<!--</div>-->
-					<!--</a>-->
-				<!--</div>-->
-			</div>
-		</div>
-	</div>
-
-	<!--<div id="fh5co-blog">-->
-		<!--<div class="container">-->
-			<!--<div class="row animate-box">-->
-				<!--<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">-->
-					<!--<h2>Post on Medium</h2>-->
-					<!--<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>-->
-				<!--</div>-->
-			<!--</div>-->
-			<!--<div class="row">-->
-				<!--<div class="col-md-4">-->
-					<!--<div class="fh5co-blog animate-box">-->
-						<!--<a href="#" class="blog-bg" style="background-image: url(images/portfolio-1.jpg);"></a>-->
-						<!--<div class="blog-text">-->
-							<!--<span class="posted_on">Mar. 15th 2016</span>-->
-							<!--<h3><a href="#">Photoshoot On The Street</a></h3>-->
-							<!--<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>-->
-							<!--<ul class="stuff">-->
-								<!--<li><i class="icon-heart2"></i>249</li>-->
-								<!--<li><i class="icon-eye2"></i>308</li>-->
-								<!--<li><a href="#">Read More<i class="icon-arrow-right22"></i></a></li>-->
-							<!--</ul>-->
-						<!--</div> -->
-					<!--</div>-->
-				<!--</div>-->
-				<!--<div class="col-md-4">-->
-					<!--<div class="fh5co-blog animate-box">-->
-						<!--<a href="#" class="blog-bg" style="background-image: url(images/portfolio-2.jpg);"></a>-->
-						<!--<div class="blog-text">-->
-							<!--<span class="posted_on">Mar. 15th 2016</span>-->
-							<!--<h3><a href="#">Surfing at Philippines</a></h3>-->
-							<!--<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>-->
-							<!--<ul class="stuff">-->
-								<!--<li><i class="icon-heart2"></i>249</li>-->
-								<!--<li><i class="icon-eye2"></i>308</li>-->
-								<!--<li><a href="#">Read More<i class="icon-arrow-right22"></i></a></li>-->
-							<!--</ul>-->
-						<!--</div> -->
-					<!--</div>-->
-				<!--</div>-->
-				<!--<div class="col-md-4">-->
-					<!--<div class="fh5co-blog animate-box">-->
-						<!--<a href="#" class="blog-bg" style="background-image: url(images/portfolio-3.jpg);"></a>-->
-						<!--<div class="blog-text">-->
-							<!--<span class="posted_on">Mar. 15th 2016</span>-->
-							<!--<h3><a href="#">Capture Living On Uderwater</a></h3>-->
-							<!--<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>-->
-							<!--<ul class="stuff">-->
-								<!--<li><i class="icon-heart2"></i>249</li>-->
-								<!--<li><i class="icon-eye2"></i>308</li>-->
-								<!--<li><a href="#">Read More<i class="icon-arrow-right22"></i></a></li>-->
-							<!--</ul>-->
-						<!--</div> -->
-					<!--</div>-->
-				<!--</div>-->
-			<!--</div>-->
-		<!--</div>-->
-	<!--</div>-->
-
-	<div id="fh5co-started" class="fh5co-bg-dark">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Hire Me!</h2>
-					<p>Are you thinking about your new Project? just feel free to Contact Me!</p>
-					<p><a href="https://www.facebook.com/iamriajul" target="_blank" class="btn btn-default btn-lg">Contact Me</a></p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div id="fh5co-consult">
-		<div class="video fh5co-video" style="background-image: url(images/riajul.jpg);">
-			<div class="overlay"></div>
-		</div>
-		<div class="choose animate-box">
-			<h2>Contact</h2>
-			<form id="contact-form" action="https://formcarry.com/s/bjb_rl0vmtO" method="POST" accept-charset="UTF-8" >
-			<div class="row form-group">
-					<div class="col-md-6">
-						<input type="text" name="First_Name" id="fname" class="form-control" placeholder="Your firstname">
-					</div>
-				</div>
-				<div class="row form-group">
-					<div class="col-md-6">
-						<input type="text" name="Last_Name" id="lname" class="form-control" placeholder="Your lastname">
-					</div>
-				</div>
-
-				<div class="row form-group">
-					<div class="col-md-12">
-						<input type="text" name="email" id="email" class="form-control" placeholder="Your email address">
-					</div>
-				</div>
-
-				<div class="row form-group">
-					<div class="col-md-12">
-						<input type="text" name="Subject" id="subject" class="form-control" placeholder="Your subject of this message">
-					</div>
-				</div>
-
-				<div class="row form-group">
-					<div class="col-md-12">
-						<textarea name="Message" id="message" cols="30" rows="10" class="form-control" placeholder="Say something..."></textarea>
-					</div>
-				</div>
-				<div class="form-group">
-					<input type="hidden" name="_gotcha"><!-- use this to prevent spam -->
-					<input type="submit" value="Send Message" class="btn btn-primary">
-					<img id="img-sending" style="display: none" src="data:image/gif;base64,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"/>
-				</div>
-				<!--Common message we are gonna show to the user.-->
-				<div class="alert alert-success" id="success" style="display: none">
-					<strong>Success!</strong> Your message has been sent successfully.
-				</div>
-				<div class="alert alert-danger" id="error" style="display: none">
-					<strong>Error!</strong> Something went wrong internally, please try again later!
-				</div>
-			</form>
-		</div>
-	</div>
-
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116689.98638321518!2d89.03849220383552!3d23.909298343895948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDUzJzM3LjEiTiA4OcKwMDUnNTkuMyJF!5e0!3m2!1sen!2sus!4v1511156780942" width="800" height="600" frameborder="0" style="overflow: hidden;border:0;height: 500px;width: 100%;" allowfullscreen></iframe>
-	</div>
-
-	<div id="fh5co-footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<p>&copy; 2017 iamriajul. All Rights Reserved.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="gototop js-top">
-		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
-	</div>
-
-	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
-	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
-	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
-	<!-- Stellar Parallax -->
-	<script src="js/jquery.stellar.min.js"></script>
-	<!-- Easy PieChart -->
-	<script src="js/jquery.easypiechart.min.js"></script>
-	<!-- Google Map -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
-	<!--<script src="js/google_map.js"></script>-->
-
-	<!-- Main -->
-	<script src="js/main.js"></script>
-	</body>
+</body>
 </html>
-
